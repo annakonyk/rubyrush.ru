@@ -1,29 +1,38 @@
-puts 'Яка у вас валюти? 1. Гривні 2. Долври'
+# Модифицируйте конвертер валют так, чтобы сначала он спрашивал у пользователя направление конвертации.
 
-currency = gets.chomp
+puts "Яка у вас валюта? 
+1. Долари
+2. Гривні" 
 
-puts 'Скільки зараз коштує 1 долар?'
+v = gets.to_f
 
-usd_rate = gets.to_f
+if v == 2
 
-if currency == '1'
-  
-  puts 'Скільки у вас гривень?'
+    puts "Скільки зараз коштує 1 долар у гривнях?"
 
-  ua = gets.to_f
+    dol = gets.to_f
 
-  usd = (ua / usd_rate).round(2)
+    puts "Скільки у вас гривень?"
 
-  puts 'Ваш сума: ' + usd.to_s + ' $'
+    uan = gets.to_f
+
+    zd = (uan/dol).round(2)
+
+    puts "Ваші запаси становлять" + zd.to_s + "$"
 
 else
 
-  puts 'Скільки у вас доларів?'
+    puts "Скільки зараз коштує 1 долар у гривнях?"
 
-  usd = gets.to_f
+    dol = gets.to_f
 
-  ua = (usd * usd_rate).round(2)
+    puts "Скільки у вас доларів?"
 
-  puts 'Ваша сума: ' + ua.to_s + ' грн.'
+    d = gets.to_f
 
-end
+    zh = (dol*d).round(2)
+
+    puts "Ваші запаси становлять" + zh.to_s + "₴"
+
+end   
+
