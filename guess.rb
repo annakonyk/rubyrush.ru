@@ -6,7 +6,9 @@ b = gets.to_i
 
 if (a == b)  
 
-    exit puts "Ура! Ви перемогли!" 
+     puts "Ура! Ви перемогли!" 
+
+     exit
 
 end
 
@@ -42,7 +44,9 @@ c = gets.to_i
 
 if (a == c)  
 
-    exit puts "Ура! Ви перемогли!" 
+     puts "Ура! Ви перемогли!" 
+
+     exit
 
 end
 
@@ -79,6 +83,8 @@ d = gets.to_i
 if (a == d)  
 
     puts "Ура! Ви перемогли!" 
+
+    exit
 
 else 
 
